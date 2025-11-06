@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreakBloom - Habit Tracker</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to bottom right, #eef6ff, #ffffff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 25px 35px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+    h2 {
+      color: #0077ff;
+    }
+    input {
+      width: 70%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      padding: 8px 10px;
+      border: none;
+      border-radius: 6px;
+      background: #0077ff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fcc;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    li {
+      background: #f0f4ff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🌱 StreakBloom</h2>
+    <p>Build good habits, one day at a time.</p>
+    <div>
+      <input id="habitInput" type="text" placeholder="Enter new habit" />
+      <button id="addBtn">Add</button>
+    </div>
+    <ul id="habitList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
